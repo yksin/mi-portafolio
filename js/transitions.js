@@ -46,9 +46,11 @@
   }
 
   function setActiveNavLink(pathname) {
-    document.querySelectorAll('.nav__link[data-nav-path]').forEach((link) => {
-      const isActive = link.dataset.navPath === pathname;
-      link.classList.toggle('is-active', isActive);
+    // Compara contra `link.pathname` (resuelto por el navegador a partir del
+    // href real) en vez de una ruta fija, para que siga funcionando si el
+    // sitio se sirve bajo un subpath (p. ej. GitHub Pages: /repo/work.html).
+    document.querySelectorAll('.nav__link').forEach((link) => {
+      link.classList.toggle('is-active', link.pathname === pathname);
     });
   }
 
