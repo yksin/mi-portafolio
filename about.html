@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Mí — Omar Portafolio</title>
+  <meta name="description" content="Vida personal y educativa (contenido de muestra)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <div class="cursor" aria-hidden="true"></div>
+
+  <div class="page-transition-overlay">
+    <span class="page-transition-overlay__label">Cargando</span>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="/index.html" class="logo" data-transition data-cursor-text="Inicio">
+        <span class="logo__mark">OC</span>
+        <span class="logo__word">Portafolio</span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="/work.html" class="nav__link" data-transition data-nav-path="/work.html">
+              Trabajo <span class="nav__caret" aria-hidden="true"></span>
+            </a>
+            <div class="submenu">
+              <a href="/work.html" class="submenu__link" data-transition>Todo el trabajo</a>
+              <a href="/work.html#web-design" class="submenu__link" data-transition>Diseño Web</a>
+              <a href="/work.html#mobile-apps" class="submenu__link" data-transition>Apps Móviles</a>
+              <a href="/work.html#design-systems" class="submenu__link" data-transition>Design Systems</a>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a href="/about.html" class="nav__link is-active" data-transition data-nav-path="/about.html">Sobre Mí</a>
+          </li>
+          <li class="nav__item">
+            <a href="/contact.html" class="nav__link" data-transition data-nav-path="/contact.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-head">
+      <div class="container">
+        <div class="about-hero">
+          <div class="reveal">
+            <p class="hero__eyebrow">Sobre mí</p>
+            <h1 class="page-head__title">Diseñador de interfaces, curioso por naturaleza.</h1>
+            <p class="hero__desc" style="max-width: 46ch; margin-top: var(--space-4);">
+              Texto de relleno (dummy): dos o tres frases sobre quién es Omar, su forma
+              de entender el diseño de producto y qué lo motiva a diseñar interfaces.
+              Reemplazar por una biografía real antes de publicar.
+            </p>
+          </div>
+          <div class="about-hero__portrait reveal">
+            <div class="placeholder-media" style="--ratio: 4/5;" data-label="Retrato — dummy"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Educación</h2>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline__row">
+            <span class="timeline__year">2024</span>
+            <span class="timeline__title">Certificación en Diseño de Producto (dummy)</span>
+            <span class="timeline__desc">Institución de ejemplo — especialización en investigación de usuarios y prototipado.</span>
+          </div>
+          <div class="timeline__row">
+            <span class="timeline__year">2021</span>
+            <span class="timeline__title">Diplomatura en UX/UI (dummy)</span>
+            <span class="timeline__desc">Institución de ejemplo — fundamentos de interacción y sistemas de diseño.</span>
+          </div>
+          <div class="timeline__row">
+            <span class="timeline__year">2018</span>
+            <span class="timeline__title">Licenciatura en Diseño (dummy)</span>
+            <span class="timeline__desc">Universidad de ejemplo — formación en diseño gráfico y comunicación visual.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Vida personal</h2>
+        </div>
+        <p class="hero__desc reveal" style="max-width: 60ch; margin-bottom: var(--space-5);">
+          Texto de relleno (dummy): un párrafo breve sobre intereses fuera del trabajo
+          —fotografía, música, viajes, lo que corresponda— para darle un tono más
+          humano a la sección. Acompañado de una galería de imágenes de muestra.
+        </p>
+        <div class="gallery-grid reveal">
+          <div class="placeholder-media" data-label="Foto 1 — dummy"></div>
+          <div class="placeholder-media" data-label="Foto 2 — dummy"></div>
+          <div class="placeholder-media" data-label="Foto 3 — dummy"></div>
+          <div class="placeholder-media" data-label="Foto 4 — dummy"></div>
+          <div class="placeholder-media" data-label="Foto 5 — dummy"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2 class="cta-band__title reveal">¿Quieres conversar sobre un proyecto?</h2>
+        <div class="btn__magnetic-wrap reveal">
+          <a href="/contact.html" class="btn" data-transition data-magnetic data-cursor-text="Escribir">
+            Ir a Contacto
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__col">
+        <h4>Portafolio</h4>
+        <p>Diseño de interfaces digitales.<br />Contenido de muestra (dummy).</p>
+      </div>
+      <div class="footer__col">
+        <h4>Navegación</h4>
+        <a href="/work.html" data-transition>Trabajo</a>
+        <a href="/about.html" data-transition>Sobre Mí</a>
+        <a href="/contact.html" data-transition>Contacto</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <a href="mailto:hola@dummy.com">hola@dummy.com</a>
+        <a href="#">LinkedIn ↗</a>
+        <a href="#">Instagram ↗</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 Omar — Portafolio (contenido dummy)</span>
+      <span>Hecho con HTML, CSS y JS vanilla</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script>
+    if (window.gsap && window.ScrollTrigger) gsap.registerPlugin(ScrollTrigger);
+  </script>
+  <script src="/js/drag-scroll.js"></script>
+  <script src="/js/transitions.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

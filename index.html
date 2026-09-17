@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omar — Portafolio de Diseño UI/UX</title>
+  <meta name="description" content="Portafolio de diseño de interfaz (contenido de muestra)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- Cursor personalizado -->
+  <div class="cursor" aria-hidden="true"></div>
+
+  <!-- Overlay de transición entre páginas (fuera de <main>, nunca se re-renderiza) -->
+  <div class="page-transition-overlay">
+    <span class="page-transition-overlay__label">Cargando</span>
+  </div>
+
+  <!-- ==================== HEADER (fuera de <main>) ==================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="/index.html" class="logo" data-transition data-cursor-text="Inicio">
+        <span class="logo__mark">OC</span>
+        <span class="logo__word">Portafolio</span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="/work.html" class="nav__link" data-transition data-nav-path="/work.html">
+              Trabajo <span class="nav__caret" aria-hidden="true"></span>
+            </a>
+            <div class="submenu">
+              <a href="/work.html" class="submenu__link" data-transition>Todo el trabajo</a>
+              <a href="/work.html#web-design" class="submenu__link" data-transition>Diseño Web</a>
+              <a href="/work.html#mobile-apps" class="submenu__link" data-transition>Apps Móviles</a>
+              <a href="/work.html#design-systems" class="submenu__link" data-transition>Design Systems</a>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a href="/about.html" class="nav__link" data-transition data-nav-path="/about.html">Sobre Mí</a>
+          </li>
+          <li class="nav__item">
+            <a href="/contact.html" class="nav__link" data-transition data-nav-path="/contact.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN (esto se reemplaza en cada transición) ==================== -->
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <p class="hero__eyebrow reveal">UI / UX Designer — Disponible para proyectos (dummy)</p>
+        <h1 class="hero__title reveal">
+          Diseño interfaces digitales que resuelven <em>problemas reales.</em>
+        </h1>
+        <div class="hero__meta reveal">
+          <p class="hero__desc">
+            Este es contenido de marcador de posición. Aquí irá una breve introducción
+            sobre el enfoque de diseño, la especialidad (producto digital, sistemas de
+            diseño, apps) y el tipo de proyectos que se presentan en este portafolio.
+          </p>
+          <div class="btn__magnetic-wrap">
+            <a href="/work.html" class="btn" data-transition data-magnetic data-cursor-text="Ver">
+              Ver Trabajo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--tight">
+      <div class="container">
+        <div class="placeholder-media reveal" style="--ratio: 21/8;" data-label="Imagen destacada — dummy"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Trabajo destacado</h2>
+          <a href="/work.html" class="link-arrow" data-transition>
+            Ver todo <span class="link-arrow__glyph" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="grid-work">
+          <a href="/work/nova-bank.html" class="card reveal" data-transition data-cursor-text="Ver proyecto">
+            <div class="placeholder-media" style="--ratio: 4/3;" data-label="Nova Bank"></div>
+            <div class="card__title-row">
+              <span class="card__title">Nova Bank</span>
+              <span class="card__tag">App Móvil</span>
+            </div>
+          </a>
+          <a href="/work/studio-lumen.html" class="card reveal" data-transition data-cursor-text="Ver proyecto">
+            <div class="placeholder-media" style="--ratio: 4/3;" data-label="Studio Lumen"></div>
+            <div class="card__title-row">
+              <span class="card__title">Studio Lumen</span>
+              <span class="card__tag">Diseño Web</span>
+            </div>
+          </a>
+          <a href="/work/orbit-health.html" class="card reveal" data-transition data-cursor-text="Ver proyecto">
+            <div class="placeholder-media" style="--ratio: 4/3;" data-label="Orbit Health"></div>
+            <div class="card__title-row">
+              <span class="card__title">Orbit Health</span>
+              <span class="card__tag">Design System</span>
+            </div>
+          </a>
+          <a href="/work/aria-music.html" class="card reveal" data-transition data-cursor-text="Ver proyecto">
+            <div class="placeholder-media" style="--ratio: 4/3;" data-label="Aria Music"></div>
+            <div class="card__title-row">
+              <span class="card__title">Aria Music</span>
+              <span class="card__tag">App Móvil</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="about-hero">
+          <div class="reveal">
+            <p class="hero__eyebrow">Sobre mí</p>
+            <h2 class="section-heading" style="margin-bottom: var(--space-4);">Un párrafo breve de introducción personal, a modo de resumen.</h2>
+            <p class="hero__desc" style="max-width: 52ch; margin-bottom: var(--space-4);">
+              Texto de relleno: una o dos frases sobre trayectoria, intereses de diseño
+              y la forma de trabajar. Se amplía en la página "Sobre Mí".
+            </p>
+            <a href="/about.html" class="link-arrow" data-transition>
+              Conocer más <span class="link-arrow__glyph" aria-hidden="true">→</span>
+            </a>
+          </div>
+          <div class="about-hero__portrait reveal">
+            <div class="placeholder-media" style="--ratio: 4/5;" data-label="Retrato — dummy"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2 class="cta-band__title reveal">¿Trabajamos juntos en tu próximo producto?</h2>
+        <div class="btn__magnetic-wrap reveal">
+          <a href="/contact.html" class="btn" data-transition data-magnetic data-cursor-text="Escribir">
+            Iniciar conversación
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER (fuera de <main>) ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__col">
+        <h4>Portafolio</h4>
+        <p>Diseño de interfaces digitales.<br />Contenido de muestra (dummy).</p>
+      </div>
+      <div class="footer__col">
+        <h4>Navegación</h4>
+        <a href="/work.html" data-transition>Trabajo</a>
+        <a href="/about.html" data-transition>Sobre Mí</a>
+        <a href="/contact.html" data-transition>Contacto</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <a href="mailto:hola@dummy.com">hola@dummy.com</a>
+        <a href="#">LinkedIn ↗</a>
+        <a href="#">Instagram ↗</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 Omar — Portafolio (contenido dummy)</span>
+      <span>Hecho con HTML, CSS y JS vanilla</span>
+    </div>
+  </footer>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script>
+    if (window.gsap && window.ScrollTrigger) gsap.registerPlugin(ScrollTrigger);
+  </script>
+  <script src="/js/drag-scroll.js"></script>
+  <script src="/js/transitions.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — Omar Portafolio</title>
+  <meta name="description" content="Canales de contacto (contenido de muestra)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <div class="cursor" aria-hidden="true"></div>
+
+  <div class="page-transition-overlay">
+    <span class="page-transition-overlay__label">Cargando</span>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="/index.html" class="logo" data-transition data-cursor-text="Inicio">
+        <span class="logo__mark">OC</span>
+        <span class="logo__word">Portafolio</span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="/work.html" class="nav__link" data-transition data-nav-path="/work.html">
+              Trabajo <span class="nav__caret" aria-hidden="true"></span>
+            </a>
+            <div class="submenu">
+              <a href="/work.html" class="submenu__link" data-transition>Todo el trabajo</a>
+              <a href="/work.html#web-design" class="submenu__link" data-transition>Diseño Web</a>
+              <a href="/work.html#mobile-apps" class="submenu__link" data-transition>Apps Móviles</a>
+              <a href="/work.html#design-systems" class="submenu__link" data-transition>Design Systems</a>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a href="/about.html" class="nav__link" data-transition data-nav-path="/about.html">Sobre Mí</a>
+          </li>
+          <li class="nav__item">
+            <a href="/contact.html" class="nav__link is-active" data-transition data-nav-path="/contact.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-head">
+      <div class="container">
+        <p class="hero__eyebrow reveal">Hablemos</p>
+        <h1 class="contact-hero__title reveal">Construyamos algo juntos.</h1>
+        <p class="hero__desc reveal" style="max-width: 46ch; margin-top: var(--space-4);">
+          Texto de relleno (dummy): disponibilidad actual, tipo de proyectos que se
+          aceptan y tiempo de respuesta estimado.
+        </p>
+
+        <div class="contact-channels reveal">
+          <a href="mailto:hola@dummy.com" class="contact-channel" data-cursor-text="Escribir">
+            <span class="contact-channel__label">Email</span>
+            <span class="contact-channel__value">hola@dummy.com</span>
+            <span class="link-arrow"><span class="link-arrow__glyph" aria-hidden="true">→</span></span>
+          </a>
+          <a href="#" class="contact-channel" data-cursor-text="Abrir">
+            <span class="contact-channel__label">LinkedIn</span>
+            <span class="contact-channel__value">/in/usuario-dummy</span>
+            <span class="link-arrow"><span class="link-arrow__glyph" aria-hidden="true">→</span></span>
+          </a>
+          <a href="#" class="contact-channel" data-cursor-text="Abrir">
+            <span class="contact-channel__label">Instagram</span>
+            <span class="contact-channel__value">@usuario.dummy</span>
+            <span class="link-arrow"><span class="link-arrow__glyph" aria-hidden="true">→</span></span>
+          </a>
+          <a href="#" class="contact-channel" data-cursor-text="Abrir">
+            <span class="contact-channel__label">Behance</span>
+            <span class="contact-channel__value">/usuario-dummy</span>
+            <span class="link-arrow"><span class="link-arrow__glyph" aria-hidden="true">→</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__col">
+        <h4>Portafolio</h4>
+        <p>Diseño de interfaces digitales.<br />Contenido de muestra (dummy).</p>
+      </div>
+      <div class="footer__col">
+        <h4>Navegación</h4>
+        <a href="/work.html" data-transition>Trabajo</a>
+        <a href="/about.html" data-transition>Sobre Mí</a>
+        <a href="/contact.html" data-transition>Contacto</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <a href="mailto:hola@dummy.com">hola@dummy.com</a>
+        <a href="#">LinkedIn ↗</a>
+        <a href="#">Instagram ↗</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 Omar — Portafolio (contenido dummy)</span>
+      <span>Hecho con HTML, CSS y JS vanilla</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script>
+    if (window.gsap && window.ScrollTrigger) gsap.registerPlugin(ScrollTrigger);
+  </script>
+  <script src="/js/drag-scroll.js"></script>
+  <script src="/js/transitions.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
